@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+    <form action="login" method="post">
+        {% csrf_token %}
+        <h1>Login as</h1><br>
+        Admin<input type="radio" name="adminr"><br>
+        User<input type="radio" name="userr">
+        <p>{{msg}}</p>
+        <input type="text" placeholder="user name" name="username"><br>
+        <input type="password" placeholder="password" name="password"><br>
+        <input href="account/contact" type="submit"><br>
+    </form>
+</body>
+</html>
